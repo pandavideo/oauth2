@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panda Oauth2 - Step 1</title>
+  </head>
+  <body>
+    Passo 1:
+    <div id="step1"></div>
+
+    <script>
+      // you can get these informations (client_id, redirect_uri) in https://dashboard.pandavideo.com.br/#/settings/integrations
+      const client_id = "79qgqfcru3jprfp4jph2dsrqet";
+      const scope = "aws.cognito.signin.user.admin";
+      const redirect_uri = "https://oauthdebugger.com/debug";
+
+      const step1 = document.getElementById("step1");
+
+      step1.innerHTML = `<a target="_blank" href='https://auth.pandavideo.com.br/oauth2/authorize?client_id=${client_id}&response_type=code&scope=${scope}&redirect_uri=${redirect_uri}'>Get Authorization Code</a>`;
+    </script>
+  </body>
+</html>
