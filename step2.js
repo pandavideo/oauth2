@@ -2,10 +2,10 @@ const axios = require("axios");
 const querystring = require("querystring");
 
 // you can get these informations (client_id, client_secret, redirect_uri) in https://dashboard.pandavideo.com.br/#/settings/integrations
-const client_id = "79qgqfcru3jprfp4jph2dsrqet";
-const client_secret = "mvrc5rrrg0l2hj11el7mlgf2vc8b0k6kor76l9r57nee4lu9oug";
-const code = "95bb6fdc-f81f-41c9-b342-7b00db9a5e2b"; // this you'll find in the step-1.html archive.
-const redirect_uri = "https://oauthdebugger.com/debug";
+const client_id = "";
+const client_secret = "";
+const code = ""; // this you'll find in the step-1.html archive.
+const redirect_uri = "";
 
 // if (true) it will test api key
 const make_test = true;
